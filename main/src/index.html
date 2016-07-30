@@ -1,0 +1,30 @@
+<script src="../../libs/angular.min.js"></script>
+<script src="index.js"></script>
+
+<html>
+<head>
+<title>HearthReview</title>
+<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+</head>
+</html>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+	<div class="center">
+		<img class="hover-dim card" src="../resources/images/cards/deathwing.png"></img>
+	</div>
+	<div class="center">
+		<img class="hover-dim star" src="../resources/images/HSlogo.png"
+		     ng-repeat="star in [1, 2, 3, 4, 5]"></img>
+     </div>
+	<div class="center">
+		<img class="hover-dim small-card"
+		     ng-repeat="card in cards"
+		     ng-src="{{getImagePath(card)}}"></img>
+    </div>
+	<div class="row">
+		First Name: <input type="text" ng-model="firstName"><br>
+		Last Name: <input type="text" ng-model="lastName"><br>
+		<br>
+		Full Name: {{firstName + " " + lastName}}
+	</div>    
+</div>

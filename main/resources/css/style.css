@@ -1,0 +1,32 @@
+.blue-txt {
+	color: blue;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.hover-dim:hover {
+	 background-color: black;
+     opacity: 0.8;
+}
+
+.card {
+	height: auto; 
+    width: auto; 
+    max-width: 400px; 
+    max-height: 400px;
+}
+
+.small-card {
+	height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+}
+
+.star {
+	max-width: 50px;
+}
